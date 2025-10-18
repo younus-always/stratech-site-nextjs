@@ -1,7 +1,7 @@
 
 const Home = () => {
       return (
-            <div className="overflow-hidden"></div>
+            <div className="overflow-hidden h-[1000px]"></div>
       )
 }
 

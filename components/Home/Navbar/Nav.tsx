@@ -1,11 +1,28 @@
 import { navLinks } from "@/constant/constant"
 import Link from "next/link"
+import { useEffect, useState } from "react";
 import { GrTechnology } from "react-icons/gr"
 import { HiBars3BottomRight } from "react-icons/hi2"
 
-const Nav = () => {
+type Props = {
+  openNav: () => void;
+};
+
+const Nav = ({ openNav }: Props) => {
+  const [navBg, setNavBg] = useState(false);
+
+  useEffect(() => {
+    const handler = () => {
+      if (window.scrollY >= 90) setNavBg(true);
+      if (window.scrollY <= 90) setNavBg(false);
+    };
+
+    window.addEventListener("scroll", handler);
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
+
   return (
-    <div className="w-full h-[12vh] fixed transition-all duration-200 z-[100] ">
+    <div className={`w-full h-[12vh] ${navBg ? "bg-white shadow-md" : ""} fixed transition-all duration-200 z-[100]`}>
       <div className=" w-[90%] h-full mx-auto flex items-center justify-between xl:w-[80%]">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -52,7 +69,7 @@ const Nav = () => {
             </span>
           </button>
           <button>
-            <HiBars3BottomRight className="w-8 h-8 text-black cursor-pointer lg:hidden" />
+            <HiBars3BottomRight onClick={openNav} className="w-8 h-8 text-black cursor-pointer lg:hidden" />
           </button>
         </div>
       </div>
