@@ -21,8 +21,8 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
                         {
                               navLinks.map(link =>
                                     <li key={link.id}>
-                                          <Link href={link.url}>
-                                                <span className='w-fit text-white text-xl sm:text-3xl border-b-2 border-white pb-1 ml-12'>{link.label}</span>
+                                          <Link href={link.url} onClick={closeNav}>
+                                                <span className='w-fit text-white text-xl sm:text-3xl border-b-2 border-white hover:border-slate-400 transition-all duration-300 pb-1 ml-12'>{link.label}</span>
                                           </Link>
                                     </li>
                               )
