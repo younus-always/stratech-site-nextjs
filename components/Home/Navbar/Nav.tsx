@@ -13,8 +13,8 @@ const Nav = ({ openNav }: Props) => {
 
   useEffect(() => {
     const handler = () => {
-      if (window.scrollY >= 90) setNavBg(true);
-      if (window.scrollY <= 90) setNavBg(false);
+      if (window.scrollY >= 80) setNavBg(true);
+      if (window.scrollY <= 80) setNavBg(false);
     };
 
     window.addEventListener("scroll", handler);
@@ -22,7 +22,7 @@ const Nav = ({ openNav }: Props) => {
   }, []);
 
   return (
-    <div className={`w-full h-[12vh] ${navBg ? "bg-white shadow-md" : ""} fixed transition-all duration-200 z-[100]`}>
+    <div className={`w-full h-[11vh] ${navBg ? "bg-white shadow-md" : ""} fixed transition-all z-[1000]`}>
       <div className=" w-[90%] h-full mx-auto flex items-center justify-between xl:w-[80%]">
         {/* Logo */}
         <div className="flex items-center space-x-2">

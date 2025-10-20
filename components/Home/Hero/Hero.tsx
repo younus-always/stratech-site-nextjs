@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa6"
 
 const Hero = () => {
       return (
-            <div className="relative w-full h-[110vh] sm:h-screen bg-[url('/images/bg.png')] bg-cover bg-center flex flex-col justify-center">
+            <div className="relative w-full h-[100vh] sm:h-screen bg-[url('/images/bg.png')] bg-cover bg-center flex flex-col justify-center">
                   <div className="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10 items-center">
                         {/* Text Content */}
                         <div>
