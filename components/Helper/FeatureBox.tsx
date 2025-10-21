@@ -1,5 +1,12 @@
+import React from "react";
 
-const FeatureBox = ({ heading, description, icon }) => {
+type Props = {
+      heading: string;
+      description: string;
+      icon: React.ReactElement
+}
+
+const FeatureBox = ({ heading, description, icon }: Props) => {
       return (
             <div className="bg-white p-4 rounded-lg">
                   <div className="flex items-center space-x-3">
@@ -12,7 +19,7 @@ const FeatureBox = ({ heading, description, icon }) => {
                   </div>
                   {/* Description */}
                   <p className="my-3 text-gray-700 leading-relaxed">
-                       {description}
+                        {description}
                   </p>
             </div>
       )
