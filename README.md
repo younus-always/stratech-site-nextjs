@@ -56,19 +56,15 @@ npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) to see the landing page in your browser.
 
----
 
 ## 🌍 Live Demo
 
-[StraTech]("https://stratech-startup.vercel.app/")
-
----
+[StraTech](https://stratech-startup.vercel.app/)
 
 ## 🧑‍💻 Author
 
 StraTech — Built with ❤️ by Md. Younus Islam
 
----
 
 ## 📄 License
 
