@@ -1,6 +1,6 @@
 # 🌐 StraTech – Startup Landing Page
 
-![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Blue?logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwind-css)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel)
@@ -60,7 +60,7 @@ Open [http://localhost:3000](http://localhost:3000) to see the landing page in y
 
 ## 🌍 Live Demo
 
-[StraTech]()
+[StraTech]("https://stratech-startup.vercel.app/")
 
 ---
 
