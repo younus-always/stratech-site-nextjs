@@ -10,7 +10,7 @@
 ## 🚀 Project Overview
 
 **StraTech** is a modern, responsive **startup landing page** built with **Next.js**, **TypeScript**, and **Tailwind CSS**.  
-It is designed to showcase a **digital agency or SaaS startup** with sections like Hero, Services, About, Portfolio, and Contact.
+It is designed to showcase a **digital agency or SaaS startup**, featuring sections such as Hero, Services, About, Features, Reviews, Team, and Pricing.
 
 > "Empowering startups and businesses with scalable digital solutions."
 
@@ -21,8 +21,10 @@ It is designed to showcase a **digital agency or SaaS startup** with sections li
 - Responsive landing page layout ✅
 - Hero section with call-to-action 🎯
 - Services section highlighting offerings (Startup, Business, eCommerce, Digital Design, Strategy Solutions) 💼
-- About / Portfolio section for company introduction 🖼️
-- Testimonials and Contact sections 💬
+- About section for company introduction 🖼️
+- Features and Services sections 💬
+- Reviews and Team sections 🌟
+- Pricing section highlighting offering packages (Popular, Most Popular, Premium)💲
 - Clean, reusable components for scalability ⚛️
 - SEO-friendly, fast, and lightweight 🌐
 - Fully deployable to **Vercel** 🚀
@@ -34,7 +36,7 @@ It is designed to showcase a **digital agency or SaaS startup** with sections li
 - **Next.js 15 (App Router)**
 - **TypeScript** for type-safe development
 - **Tailwind CSS** for responsive and modern design
-- **Framer Motion** (optional) for smooth animations
+- **AOS** for scroll animations
 - **Vercel** for hosting and deployment
 
 ---
