@@ -7,7 +7,7 @@ const Hero = () => {
             <div className="relative w-full h-[100vh] sm:h-screen bg-[url('/images/bg.png')] bg-cover bg-center flex flex-col justify-center">
                   <div className="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10 items-center">
                         {/* Text Content */}
-                        <div>
+                        <div data-aos="fade-up">
                               <p className="text-sm sm:text-base md:text-xl font-bold text-blue-900">Build smarter — not harder.</p>
                               <h1 className="text-2xl md:text-3xl lg:text-4xl my-6 font-bold text-blue-900 leading-[2.5rem] md:leading-[3.5rem]">Launch, Grow & Dominate with{" "}<span className="text-rose-700">StraTech</span></h1>
                               <p className="text-xs sm:text-sm md:text-base font-medium text-gray-700">We help startups, agencies, and businesses accelerate product
@@ -110,7 +110,7 @@ const Hero = () => {
                               </div>
                         </div>
                         {/* Image Content */}
-                        <div className="hidden xl:block mx-auto">
+                        <div data-aos="fade-down" data-delay="150" className="hidden xl:block mx-auto">
                               <Image src={"/images/hero.jpg"} alt="hero image" width={900} height={900} />
                         </div>
                   </div>

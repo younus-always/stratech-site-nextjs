@@ -3,10 +3,10 @@ import Image from "next/image"
 
 const About = () => {
       return (
-            <div className="py-12">
+            <div id="about" className="py-12">
                   <div className="w-[80%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10 items-center">
                         {/* Image Content */}
-                        <div>
+                        <div data-aos="zoom-in" data-aos-anchor-placement="top-center">
                               <Image src={"/images/about.png"} alt="about" width={600} height={600} />
                         </div>
                         {/* Text Content */}

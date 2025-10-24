@@ -25,12 +25,14 @@ const Nav = ({ openNav }: Props) => {
     <div className={`w-full h-[11vh] ${navBg ? "bg-white shadow-md" : ""} fixed transition-all z-[1000]`}>
       <div className=" w-[90%] h-full mx-auto flex items-center justify-between xl:w-[80%]">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-blue-700 flex items-center justify-center rounded-full">
-            <GrTechnology className="w-6 h-6 text-white" />
+        <Link href="#">
+          <div className="flex items-center space-x-2">
+            <div className="w-10 h-10 bg-blue-700 flex items-center justify-center rounded-full">
+              <GrTechnology className="w-6 h-6 text-white" />
+            </div>
+            <h3 className="text-xl text-blue-700 font-bold hidden sm:block md:text-2xl">StraTech</h3>
           </div>
-          <h3 className="text-xl text-blue-700 font-bold hidden sm:block md:text-2xl">StraTech</h3>
-        </div>
+        </Link>
         {/* Navlinks */}
         <ul className="hidden lg:flex items-center space-x-8">
           {

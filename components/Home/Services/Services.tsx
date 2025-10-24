@@ -1,5 +1,5 @@
 import Boxtext from "@/components/Helper/Boxtext"
-import ServiceBox from "@/components/Helper/ServiceBox"
+import ServiceBox from "@/components/Home/Services/ServiceBox"
 import { FaShoppingCart } from "react-icons/fa"
 import { FaBriefcase, FaChess, FaRocket } from "react-icons/fa6"
 import { IoColorPaletteOutline } from "react-icons/io5"
@@ -7,7 +7,7 @@ import { MdOutlineDesignServices } from "react-icons/md"
 
 const Services = () => {
       return (
-            <div className="py-16">
+            <div id="services" className="py-16">
                   <div className="w-[80%] mx-auto">
                         <Boxtext>Our Services</Boxtext>
                         {/* heading */}
@@ -23,36 +23,53 @@ const Services = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-center mt-16">
                               {/* service box */}
                               <ServiceBox
+                                    aos="fade-right"
+                                    aosPlacement="top-center"
                                     title="Startup Launch"
                                     subTitle="Build your MVP, validate ideas, and go to market faster with our end-to-end startup support."
                                     icon={<FaRocket className="w-6 h-6 text-orange-400" />}
                               />
 
                               <ServiceBox
+                                    aos="fade-right"
+                                    aosPlacement="top-center"
+                                    aosDelay="100"
                                     title="Business Solutions"
                                     subTitle="Custom digital solutions to streamline operations and improve business performance."
                                     icon={<FaBriefcase className="w-6 h-6 text-orange-400" />}
                               />
 
                               <ServiceBox
+                                    aos="fade-right"
+                                    aosPlacement="top-center"
+                                    aosDelay="200"
                                     title="E-Commerce"
                                     subTitle="From storefront to checkout — we develop fast, secure, and conversion-optimized shops."
                                     icon={<FaShoppingCart className="w-6 h-6 text-orange-400" />}
                               />
 
                               <ServiceBox
+                                    aos="fade-right"
+                                    aosPlacement="top-center"
+                                    aosDelay="300"
                                     title="Digital Design"
                                     subTitle="Modern and intuitive UI/UX design that improves engagement and user experience."
                                     icon={<MdOutlineDesignServices className="w-6 h-6 text-orange-400" />}
                               />
 
                               <ServiceBox
+                                    aos="fade-right"
+                                    aosPlacement="top-center"
+                                    aosDelay="400"
                                     title="Unlimited Color Themes"
                                     subTitle="Flexible design system with custom color palettes to match your brand identity."
                                     icon={<IoColorPaletteOutline className="w-6 h-6 text-orange-400" />}
                               />
 
                               <ServiceBox
+                                    aos="fade-right"
+                                    aosPlacement="top-center"
+                                    aosDelay="500"
                                     title="Strategy & Consulting"
                                     subTitle="Data-driven strategy to help you make better decisions and scale with confidence."
                                     icon={<FaChess className="w-6 h-6 text-orange-400" />}

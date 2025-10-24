@@ -9,7 +9,7 @@ type Props = {
       review: string
 }
 
-const ClientReviewCard = ({ image, name, rating, review }: Props) => {
+const ClientReviewCard = ({ image, name, rating, review,  }: Props) => {
       return (
             <div className="bg-white shadow-md p-8 sm:flex items-center space-y-4 sm:space-y-0 space-x-6 rounded-xl duration-200 hover:shadow-lg">
                   <Image src={image} alt={name}

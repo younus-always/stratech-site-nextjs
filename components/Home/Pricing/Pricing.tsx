@@ -1,8 +1,8 @@
-import PriceCard from "@/components/Helper/PriceCard"
+import PriceCard from "@/components/Home/Pricing/PriceCard"
 
 const Pricing = () => {
       return (
-            <div className="py-16 bg-gray-100">
+            <div id="pricing" className="py-16 bg-gray-100">
                   <h1 className="text-2xl text-center text-blue-950 font-bold">
                         Pick a Plan and Start Using Premium Features Today
                   </h1>
@@ -11,9 +11,20 @@ const Pricing = () => {
                   </p>
 
                   <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-14">
-                        <PriceCard time="3 Month" price="39.99" badge="Popular" />
-                        <PriceCard time="12 Month" price="19.99" badge="Most Popular" />
+                        <div data-aos="fade-up"
+                              data-aos-placement="top-center">
+                              <PriceCard time="3 Month" price="39.99" badge="Popular" />
+                        </div>
+                        <div data-aos="fade-up"
+                              data-aos-placement="top-center"
+                              data-aos-delay="100">
+                              <PriceCard time="12 Month" price="19.99" badge="Most Popular" />
+                        </div>
+                        <div data-aos="fade-up"
+                              data-aos-placement="top-center"
+                              data-aos-delay="200">
                         <PriceCard time="Life Time" price="9.99" badge="Premium" />
+                        </div>
                   </div>
             </div>
 
